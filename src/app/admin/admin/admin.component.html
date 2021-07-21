@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Admin Panel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/show']" routerLinkActive="router-link-active" >Show</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="router-link-active" [routerLink]="['/admin']">Add List</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto my-2">
+             <form #data="ngForm" (ngSubmit)="onSubmit(data)">
+                 <label>Text</label>
+                 <input type="text" class="form-control my-2" [ngModel]="global?.name"  ngModel name="name" required>
+                 <label>Link</label>
+                 <input type="text" class="form-control my-2" [ngModel]="global?.link"  ngModel name="link" required>
+                 <button type="submit" class="btn my-2 bg-primary"  
+                  [disabled]="!data.valid">{{ id ? 'Update' : 'Add'}}</button>
+                <!--  <button type="submit" class="btn my-2 bg-primary" *ngIf="this.id" 
+                 [disabled]="!data.valid">Update</button> -->
+            </form>
+        </div>
+    </div>
+</div>

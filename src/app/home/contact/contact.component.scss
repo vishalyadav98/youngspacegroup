@@ -1,0 +1,38 @@
+.contactinput{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px groove white;
+    color: white;
+    width: 90%;
+  
+}
+.fa{
+    font-size: 22px;
+}
+.fab{
+    font-size: 22px;
+}
+.contacticon{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+    .contactdiv{
+        text-align: center;
+    }
+    .contactinput{
+        
+        width: 100%;
+      
+    }
+    .contactwrapper{
+        padding-left: 0px  !important;
+        padding-top: 0px !important;
+    }
+}
+.contactwrapper{
+    padding-left: 30px;
+    padding-top: 50px;
+}

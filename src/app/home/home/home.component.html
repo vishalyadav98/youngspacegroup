@@ -1,0 +1,68 @@
+<div class="bg">
+  
+    <div class="col">
+      <div class="social__links">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/Young-Space-Fashion-Events-112037591156041" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/youngspacegroup/" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/youngspace-group-764927217/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/youngspacegroup/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://web.whatsapp.com/send?l=en&amp;phone=971 5090 65492&amp;text=Hi,%20How%20are%20you?" target="_blank"><i class="fab fa-whatsapp" ></i></a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/youngspacegroup/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="flexbox">
+        <div class="logo">
+          <img src="../../../assets/images/Young_Space_logo.png" alt="" />
+          <h1 id="head-title" class="text-capitalize">Young Space <span class="text-center text-uppercase pt-2">"Land O’ the Leal"</span></h1>
+        </div>
+        <ul class="divisions">
+          <li *ngFor="let item of list">
+            <a href="{{item.link}}" target="_blank"><span>{{item.name}}</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      
+      <ul>
+        <li>
+          <a [routerLink]="['/message']">Chairman's Message</a>
+        </li>
+        <li>
+          <a [routerLink]="['/gallery']" >Gallery</a>
+        </li> 
+        <li>
+            <a [routerLink]="['/services']" >Our Service</a>
+          </li> 
+        <li>
+          <a  [routerLink]="['/about']">About Us</a>
+        </li>
+        <!-- <li>
+          <a href="team.html">Our Team</a>
+        </li> -->
+        <li>
+          <a  [routerLink]="['/career']"  >Careers</a>
+        </li>
+        <li>
+          <a  [routerLink]="['/contact']"  >Contact</a>
+        </li>
+      </ul>
+      <div class="copyright">© 2021 youngspacegroup</div>
+    </footer>
+  </div>
