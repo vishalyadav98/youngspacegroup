@@ -25,3 +25,16 @@
       margin-top: 10px;
     }
   }
+
+
+  @media (max-width:768px) {
+    .width-video{
+      width: 100%;
+    }
+  }
+
+  @media (min-width:768px) {
+    .width-video{
+      width: 50%;
+    }
+  }
