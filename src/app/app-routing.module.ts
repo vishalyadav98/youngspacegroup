@@ -15,7 +15,7 @@ const routes: Routes = [
   
     {path: '' , component:HomeComponent},
     {path: 'about' , component:AboutComponent},
-  {path: 'career' , component:CareerComponent},
+  {path: 'registration' , component:CareerComponent},
   {path: 'contact' , component:ContactComponent},
   {path: 'message' , component:MessageComponent},
   {path: 'gallery' , component:GalleryComponent},
